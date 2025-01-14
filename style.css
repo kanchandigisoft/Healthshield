@@ -1,0 +1,192 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+
+
+.pippin_form label,#pippin_password_form label { 
+   display: block; 
+   float: left;    
+   color: #fff;
+}
+.pippin_form input[type="text"], .pippin_form input[type="password"],
+.pippin_form input[type="email"] ,.pippin_form select,.pippin_password_form input[type="text"]
+,#pippin_password_form input[type="text"],#pippin_password_form input[type="password"]{
+    padding: 4px 8px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.pippin_form input[type="text"]:focus, .pippin_form input[type="password"]:focus,
+.pippin_form input[type="email"]:focus,.pippin_form select:focus,
+#pippin_password_form input[type="text"]:focus,#pippin_password_form input[type="password"]:focus {
+    border-color: #aaa;
+}
+ 
+.pippin_errors {
+    padding: 8px;
+    border: 1px solid #f50;
+    margin: 0 0 15px;
+    z-index: 999;
+    color: #ffff;
+}
+
+.formbackimg { 
+    position: relative;
+    background: #015084;
+}
+.pippin_header {
+    color: #fff !important;
+    font-weight: 400 !important;
+    font-family: 'Poppins' !important;
+	z-index:9;
+}
+form#pippin_login_form,form#pippin_registration_form {
+    z-index: 9;
+} 
+.overlay_bg_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    opacity: .2;
+    z-index: 0;
+    background-image: url(/wp-content/uploads/2022/04/Background-2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+
+div#toast_wrapper {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+.toast-header.bg-danger{
+  background: darkred !important;
+}
+.toast-header>span {
+    background: #38c2b6;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 10px;
+}
+.toast-header a.buttonclose {
+    margin-left: auto;
+    padding: 0;
+    border: unset;
+}
+.toast-body {
+    background: #fff;
+    padding-top: 20px;
+    color: #024f85;
+}
+#pippin_user_profession option[value="administrator"] {
+    display: none !important;
+}
+li.elementor-icon-list-item {
+    list-style: none;
+}
+/*Phase 2 css */
+
+/*Provider register css*/
+
+form#provider_registration_form {
+    z-index: 1;
+}
+#provider_registration_form label {
+    color: #fff;
+}
+h2.provider_header {
+    display: block;
+    color: #fff;
+    z-index: 1;
+}
+.providerImg .noavatar {
+    width: 200px;
+    height: 200px;
+    font-size: 200px;
+    margin: 0 auto;
+}
+.providerImg img {
+    height: 200px !important;
+    width: 200px !important;
+}
+.providerImg a.profile-avatar-remove-button {
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    text-align: center;
+}
+a.bottomBigbtn {
+    background: #40bfb9;
+    color: #fff !important;
+    padding: 20px 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #40bfb9 !important;
+}
+a.bottomBigbtn:hover{
+   background: #fff;
+   color: #40bfb9 !important; 
+   border: 1px solid #40bfb9 !important;
+}
+section.bottom_provider_buttons {
+    margin-top: 50px;
+    padding: 20px;
+}
+/*end register css*/
+
+.facility_form .required:after {
+    content:" *";
+    color: red;
+  }
+
+  section.profile_summery.facility {
+    margin-bottom: 70px;
+}
+
+h2.facilityTitle span a:hover {
+  color: #fff !important;
+}
+h2.purch_subs {
+    font-size: 28px;
+}
+
+.inviteFacilityForm {
+  margin-bottom: 50px;
+}
+
+.inviteFacilityForm .select2 .select2-selection {
+  margin-bottom: 10px !important;
+}
+
+.inviteFacilityForm .inv_lmt {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.inviteProviderForm span.select2 {
+    margin-bottom: 20px;
+}
